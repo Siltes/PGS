@@ -49,9 +49,9 @@ PShape prepareFaces(ArrayList<PVector> points) {
 
   PShape faces;
   if (random(1) > 0.2) {
-    faces = PGS_Triangulation.urquhartFaces(mesh, true);
+    faces = PGS_Meshing.urquhartFaces(mesh, true);
   } else {
-    faces = PGS_Triangulation.gabrielFaces(mesh, true);
+    faces = PGS_Meshing.gabrielFaces(mesh, true);
   }
 
 
